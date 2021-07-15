@@ -212,6 +212,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a02493679a77e864fa7a0a6f8afc6fec, type: 3}
+--- !u!1 &98001983 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 613354051850513688, guid: a02493679a77e864fa7a0a6f8afc6fec,
+    type: 3}
+  m_PrefabInstance: {fileID: 98001982}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &98001984
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98001983}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c7ae9d3242ea2fa4faffd4ada9c15436, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &534596876
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,3 +628,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a02493679a77e864fa7a0a6f8afc6fec, type: 3}
+--- !u!1 &2093992819 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 613354051850513688, guid: a02493679a77e864fa7a0a6f8afc6fec,
+    type: 3}
+  m_PrefabInstance: {fileID: 2093992818}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2093992820
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093992819}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b621b53a654685140b76e582ef883f6a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
