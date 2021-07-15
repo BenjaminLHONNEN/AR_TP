@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: CubesImageReference
+  m_EditorClassIdentifier: 
+  m_GuidLow: 4726745065667957141
+  m_GuidHigh: 1221035057119689909
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5127374939502753605
+      m_GuidHigh: 10275376904852439188
+    m_SerializedTextureGuid:
+      m_GuidLow: 14669592494493388404
+      m_GuidHigh: 14877526111636339737
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: CharacterBlue
+    m_Texture: {fileID: 2800000, guid: a203ce74dca6cb9419bcae8c2c9777ce, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4664272928450365175
+      m_GuidHigh: 16965942790341182641
+    m_SerializedTextureGuid:
+      m_GuidLow: 6869278131315424166
+      m_GuidHigh: 8235647248919574170
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: CharacterRed
+    m_Texture: {fileID: 2800000, guid: c06a3ba694105f549a3646df89e54a72, type: 3}

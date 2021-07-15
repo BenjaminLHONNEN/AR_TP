@@ -2,33 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Behavior de gestion du swipe.
+/// </summary>
 public class ScaleOnSwipe : MonoBehaviour
 {
+    /// <summary>
+    /// Obtient ou définit la taille par défaut.
+    /// </summary>
     public float Scale = 0.1f;
-   /* public float ScaleY = 0.1f;
-    public float ScaleZ = 0.1f;*/
 
+    /// <summary>
+    /// Obtient ou définit le vecteur de départ du swipe.
+    /// </summary>
     private Vector2 startPosition;
 
-    Vector3 temp; 
-
+    /// <summary>
+    /// Fonction appelé a chaque mise à jour du Behavior.
+    /// </summary>
     void Update()
     {
-        HandleSizeChange();
-
-        /*transform.localScale = new Vector3(Scale * Time.deltaTime, Scale * Time.deltaTime, Scale * Time.deltaTime);
-        
-         temp = transform.localScale;
-
-         temp = (new Vector4(0f, Scale * Time.deltaTime, 0f));
-         temp.y += Time.deltaTime;
-         temp.z += Time.deltaTime;
-        
-        transform.localScale = temp;*/
-
+        HandleSwipeChange();
     }
 
-    private void HandleSizeChange()
+    /// <summary>
+    /// Fonction de gestion du swipe.
+    /// </summary>
+    private void HandleSwipeChange()
     {
         Touch[] touches = Input.touches;
         if (touches.Length >= 1)
@@ -41,27 +41,29 @@ public class ScaleOnSwipe : MonoBehaviour
             else if (currentTouch.phase == TouchPhase.Ended)
             {
                 Vector2 endPosition = currentTouch.position;
-                HandleSwipe(startPosition, endPosition);
+                HandleSwipeEnd(startPosition, endPosition);
             }
         }
     }
-    private void HandleSwipe(Vector2 startPosition, Vector2 endPosition)
+
+    /// <summary>
+    /// Fonction de gestion de la taille des elements.
+    /// </summary>
+    /// <param name="startPosition">Position de départ du swipe.</param>
+    /// <param name="endPosition">Position de fin de swipe.</param>
+    private void HandleSwipeEnd(Vector2 startPosition, Vector2 endPosition)
     {
         bool isUpwardSwipe = startPosition.y < endPosition.y;
         bool isDownwardSwipe = startPosition.y > endPosition.y;
 
-        //float swipeDistance = Vector2.Distance(startPosition, endPosition);
+        // Si on swipe vers le haut on aagrandi le GameObject, autrement on le diminue
         if (isUpwardSwipe)
         {
-            Scale += 0.1f;
-           /* ScaleY += 0.1f;
-            ScaleZ += 0.1f;*/
+            Scale += 0.01f;
         }
         else if (isDownwardSwipe)
         {
-            Scale -= 0.1f;
-          /*  ScaleY -= 0.1f;
-            ScaleZ -= 0.1f;*/
+            Scale -= 0.01f;
         }
         transform.localScale = new Vector3(Scale ,Scale ,Scale);
     }
